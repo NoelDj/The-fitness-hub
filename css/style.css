@@ -1,4 +1,8 @@
-
+:root {
+  --main-bg-color: red;
+  --main-txt-color: white;
+    --sec-txt-color:black;
+}
 
 *{
     box-sizing: border-box;
@@ -6,13 +10,41 @@
     margin: 0;
 }
 body{
-    background-color: red;
-    padding: 11vh 6%;
+    background-color: var(--main-bg-color);
+
     padding-bottom: 0;
 }
 
 main{
     background-color: black;
-    border-radius: 20px 20px 0 0;
+
     height:89vh;
+}
+
+.exercise {
+
+    background: white;
+    min-height: 50vh;
+}
+.about{
+    min-height: 30vh;
+    background-color: red;
+}
+.filter,.exerciselist{
+    background-color: white;
+    min-height: 200px;
+}
+footer{
+    border: 2px solid white;
+    height: 20vh;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (min-width:1000px){
+    body{
+    padding: 11vh 6%;
+    }
+    main {
+        border-radius: 20px 20px 0 0;
+    }
 }
